@@ -1,0 +1,7 @@
+# CypherGPT Recommended Python Dependencies
+openai>=1.0.0
+pronouncing>=0.2.0
+pytest>=7.0.0
+python-dotenv>=1.0.0
+streamlit>=1.20.0
+# Add additional libraries as needed for web, NLP, or game features

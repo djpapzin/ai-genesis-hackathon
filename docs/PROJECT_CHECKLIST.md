@@ -5,25 +5,71 @@
 ## Project Checklist and Implementation Plan
 
 ### 1. Project Setup Phase
-- [ ] Initialize GitHub repository
-- [ ] Set up project structure
-- [ ] Configure development environment
-- [ ] Set up environment variables and .env file
-- [ ] Create .gitignore (ensure API keys are listed)
+
+> Project Name: **CypherGPT**
+
+- [x] Initialize GitHub repository
+- [x] Set up project structure
+- [x] Configure development environment
+- [x] Set up environment variables and .env file
+- [x] Create .gitignore (ensure API keys are listed)
 - [ ] Set up render.com deployment configuration
 
 ### 2. Development Environment Setup
-- [ ] Choose and document tech stack
-- [ ] Set up local development environment for Windows 10
-- [ ] Configure development tools and IDEs
+- [x] Choose and document tech stack
+  - **Language:** Python 3.10+
+  - **Core Libraries:** openai, pronouncing, python-dotenv
+  - **Testing:** pytest
+  - **Environment:** venv (virtual environment)
+  - **Extensible:** Ready for web frameworks (e.g., FastAPI, Flask) and advanced NLP tools as needed
+- [x] Set up local development environment for Windows 10
+- [x] Configure development tools and IDEs
 - [ ] Set up linting and code formatting
 - [ ] Configure testing framework
 
 ### 3. Core Features Implementation
-- [ ] Feature 1: [To be defined]
-- [ ] Feature 2: [To be defined]
-- [ ] Feature 3: [To be defined]
-- [ ] Feature 4: [To be defined]
+- [ ] Add support for persona/character selection (e.g., "Rap as Eminem")
+- [ ] Personalization Layer
+    - [x] Text preprocessing (cleaning, normalization)
+    - [x] Named Entity Recognition (NER)
+    - [x] Style detection
+    - [x] Theme extraction
+    - [x] Slang extraction
+    - [x] Unique phrase extraction
+    - [ ] Rhyme scheme extraction
+    - [ ] Insult/target detection
+    - [ ] Opponent fingerprint (repeated phrases, subject matter)
+    - [ ] Pass structured context into prompt
+- [x] Implement actual AI rap generation and scoring logic
+- [x] Add endpoints for Player vs Player, Freestyle, and AI Coach modes
+- [x] Add persistent storage (if needed)
+- [x] Write tests for the API
+- [x] Tone Control Layer
+    - [x] Allow user to select response tone (aggressive, witty, sarcastic, etc.)
+    - [x] Integrate tone into prompt generation
+- [ ] Style Transfer / Rap Persona Layer
+    - [ ] Implement persona selection (e.g., Tupac, Eminem, Shakespeare)
+    - [ ] Pre-design prompt personas or fine-tuned styles
+    - [ ] Integrate persona into prompt generation
+- [ ] Fallback Layer (Rhyme Guarantee)
+    - [ ] Prompt engineering for rhyme structure (AABB, syllable count, etc.)
+    - [ ] Few-shot prompting with rhyming examples
+    - [ ] Postprocessing rhyme checker (e.g., using pronouncing lib)
+    - [ ] Fallback loop: auto-regenerate lines if rhyme fails
+    - [ ] (Optional) Integrate rhyme-focused models or constraints
+- [ ] Real-Time Interaction Layer (Future/Optional)
+    - [ ] Mic input for live battles
+    - [ ] Rap output voice (TTS)
+    - [ ] Battle mode with scoreboards
+- [ ] Postprocessing Layer (Future/Optional)
+    - [ ] Highlight punchlines (NLP for puns, insults)
+    - [ ] Animate words in UI
+    - [ ] Add scoring logic (rhyme density, syllable patterns)
+    - [ ] Beat-synced TTS
+- [ ] Flow Analyzer + Scoreboard (Future/Optional)
+    - [ ] Analyze rhyme density, complexity, syllables/line
+    - [ ] Score both opponent and AI responses
+    - [ ] Audience voting/live scoring
 
 ### 4. Security Implementation
 - [ ] Set up environment variables management
@@ -47,7 +93,7 @@
 - [ ] Create deployment documentation
 
 ### 7. Documentation
-- [ ] Create README.md
+- [x] Create README.md
 - [ ] API documentation
 - [ ] Setup instructions
 - [ ] Deployment guide
